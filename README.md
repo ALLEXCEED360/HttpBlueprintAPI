@@ -1,31 +1,30 @@
-# HttpBlueprintAPI
+# HttpBlueprintFunctionLibrary Plugin
 
-An Unreal Engine 5 plugin providing Blueprint nodes to make HTTP API requests.
+This plugin provides Blueprint-accessible HTTP functionality for Unreal Engine 5.
 
 ## Features
 
-- Easy-to-use BlueprintCallable node to perform HTTP GET requests.
-- Prints API response to screen and output log.
-- Designed for UE5.5 with C++ and Blueprint integration.
+- Make HTTP GET and POST requests with custom headers.
+- Receive asynchronous callbacks in Blueprints with response data.
+- Utility functions to validate URLs and check HTTP response status codes.
 
-## Installation
+## How to Use
 
-1. Copy the `HttpBlueprintAPI` folder into your project’s `Plugins/` directory.
-2. Open your project in Unreal Editor.
-3. Go to **Edit → Plugins**, find **HttpBlueprintAPI** under **Installed**.
-4. Enable the plugin and restart the editor.
+### Installation
 
-## Usage
+1. Copy the `HttpBlueprintFunctionLibrary` folder into your Unreal project’s `Plugins` folder.
+2. Enable the plugin in your project settings (Edit → Plugins).
+3. Restart the Unreal Editor to compile the plugin.
 
-- In any Blueprint, call the **Make API Request** node.
-- Provide a valid URL, for example:
+### Blueprint Usage
 
-  ```
-  https://jsonplaceholder.typicode.com/todos/1
-  ```
+- Use the `Make HTTP GET Request` node to send GET requests.
+- Use the `Make HTTP POST Request` node to send POST requests with a request body.
+- Use the `Make HTTP Request with Headers` node for full control over HTTP method and headers.
+- Bind your Blueprint event to the callback delegate to handle the response.
 
-- The response will print on screen and in the log.
+### Sample GET Request
 
-## License
+```blueprint
+MakeHttpGetRequest("https://api.example.com/data", OnResponseReceived);
 
-This project is licensed under the MIT License - see the LICENSE file for details.
