@@ -9,7 +9,7 @@ A comprehensive Unreal Engine 5 plugin that enables Blueprint developers to make
 ## 🚀 Features
 
 - ✅ **Blueprint Delegate Callbacks** - Asynchronous response handling without freezing gameplay
-- ✅ **Multiple HTTP Methods** - GET, POST, PUT, DELETE support with custom headers
+- ✅ **Multiple HTTP Methods** - GET, POST support with custom headers
 - ✅ **Comprehensive Error Handling** - Detailed error messages and HTTP status code interpretation
 - ✅ **Thread-Safe Operations** - Proper async task management for Blueprint safety
 - ✅ **JSON Ready** - Built-in support for JSON APIs and content types
