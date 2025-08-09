@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "HTTP Blueprint API",
+	"Description": "A plugin that allows making HTTP API requests from Blueprints.",
+	"Category": "Networking",
+	"CreatedBy": "Your Name",
+	"CreatedByURL": "https://github.com/ALLEXCEED360",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "HttpBlueprintAPI",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

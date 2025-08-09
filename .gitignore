@@ -1,0 +1,22 @@
+# Ignore Unreal Engine intermediate files and binaries
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+
+# Visual Studio files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider
+.idea/
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
